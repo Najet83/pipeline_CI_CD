@@ -8,8 +8,8 @@ This repository contains a python project that can be easily run using Docker. F
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/DevOps-Lebondeveloppeur/docker-examples.git
-cd docker-examples/python-app
+git clone https://github.com/DevOps-Lebondeveloppeur/python-app
+cd python-app
 ```
 
 ### 2. Build the Docker Image
