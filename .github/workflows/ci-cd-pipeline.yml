@@ -8,7 +8,7 @@ on:
 
 # ✅ Global Environment Variables
 env:
-  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/python-app:${{ github.sha }}
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/python-app:${{ github.run_number }}
 
 jobs:
   # ✅ Run Unit Tests
