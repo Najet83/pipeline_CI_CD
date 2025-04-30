@@ -18,15 +18,11 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Run unit tests
         run: |
           python -m venv venv  # Create a virtual environment
           source venv/bin/activate
           pip install -r requirements.txt  # Install Python dependencies
-
-      - name: Run unit tests
-        run: |
-          source venv/bin/activate
           pytest  # Run tests using pytest
 
   # ✅ Build and Push Docker Image
