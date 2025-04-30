@@ -5,6 +5,11 @@ on:
     branches:
       - main  # Trigger the workflow on push to main branch
 
+
+# ✅ Global Environment Variables
+env:
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/python-app:${{ github.sha }}
+
 jobs:
   # ✅ Run Unit Tests
   unit-test-job:
