@@ -1,0 +1,28 @@
+name: Pipeline CI/CD Python App
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to main branch
+
+jobs:
+  # ✅ Run Unit Tests
+  unit-test-job:
+    runs-on: ubuntu-latest
+   
+    steps:
+      - name: Clone Source Code
+        uses: actions/checkout@v4  # Checkout the code from the repo
+
+      - name: Set up Python
+        uses: actions/setup-python@v4  # Set up Python environment
+        with:
+          python-version: '3.9'
+
+      - name: Run unit tests
+        run: |
+          python -m venv venv  # Create a virtual environment
+          source venv/bin/activate
+          
+          pip install -r requirements.txt  # Install Python dependencies
+          pytest  # Run tests using pytest
