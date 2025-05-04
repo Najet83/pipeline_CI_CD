@@ -1,4 +1,4 @@
-# new_version_vps_credentials
+# version_vps_credentials_https://console.vpsserver.com/
 # Learn Dockerfile with a python Project
 
 This repository contains a python project that can be easily run using Docker. Follow the steps below to set up and run the project.
